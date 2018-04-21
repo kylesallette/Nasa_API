@@ -11,8 +11,12 @@
   <div class="header animated flipInY">
 <h1 style="font-size:10vw"><%= @nasa_info["title"] %></h1>
 </div>
+<div class="pic">
 <img src="<%= @nasa_info["url"]%>"style="width:100%;height:auto;"/>
+</div>
+<div class="text">
 <p> <%= @nasa_info["explanation"] %></p>
+</div>
 <p> <%= @nasa_info["date"] %></p>
 </body>
 </html>
