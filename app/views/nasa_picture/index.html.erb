@@ -1,4 +1,17 @@
-<h1><%= @nasa_info["title"] %></h1>
-<img src="<%= @nasa_info["url"] %>"/>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<link rel="stylesheet" href="main.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header animated flipInY">
+<h1 style="font-size:10vw"><%= @nasa_info["title"] %></h1>
+</div>
+<img src="<%= @nasa_info["url"]%>"style="width:100%;height:auto;"/>
 <p> <%= @nasa_info["explanation"] %></p>
 <p> <%= @nasa_info["date"] %></p>
+</body>
+</html>
