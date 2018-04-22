@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 <body>
   <div class="header animated flipInY">
-<h1 style="font-size:10vw"><%= @nasa_info["title"] %></h1>
-</div>
-<div class="pic">
-  <% if @media_type_is_video %>
+  <h1 style="font-size:10vw"><%= @nasa_info["title"] %></h1>
+  </div>
+  <div class="pic">
+   <% if @media_type_is_video %>
   http://%=%20@nasa_info[
   <% else %>
-<img src="<%= @nasa_info["url"]%>"style="width:100%;height:auto; border-radius: 5px;"/>
-<% end %>
-</div>
+  <img src="<%= @nasa_info["url"]%>"style="width:100%;height:auto; border-radius: 5px;"/>
+  <% end %>
+  </div>
 <div class="text">
 <p> <%= @nasa_info["explanation"] %></p>
 </div>
