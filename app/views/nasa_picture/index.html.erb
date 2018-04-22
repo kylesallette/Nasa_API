@@ -12,7 +12,11 @@
 <h1 style="font-size:10vw"><%= @nasa_info["title"] %></h1>
 </div>
 <div class="pic">
+  <% if @media_type_is_video %>
+  http://%=%20@nasa_info[
+  <% else %>
 <img src="<%= @nasa_info["url"]%>"style="width:100%;height:auto;"/>
+<% end %>
 </div>
 <div class="text">
 <p> <%= @nasa_info["explanation"] %></p>
